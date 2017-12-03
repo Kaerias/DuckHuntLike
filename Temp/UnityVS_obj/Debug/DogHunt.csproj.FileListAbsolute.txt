@@ -1,0 +1,2 @@
+Z:\Unity project\DogHunt\Temp\UnityVS_obj\Debug\DogHunt.csprojResolveAssemblyReference.cache
+Z:\Unity project\DogHunt\Temp\UnityVS_obj\Debug\DogHunt.csproj.CoreCompileInputs.cache
