@@ -101,13 +101,19 @@ public class GameController : MonoBehaviour
 
     public void Retry()
     {
-        Fairy.GetComponent<ShootFairy>().SetPause(false);
-        isPause = false;
-        allFairy = GameObject.FindGameObjectsWithTag("Fairy");
-        foreach (GameObject Fairy in allFairy)
+        if (Fairy != null)
         {
-            Destroy(Fairy);
+            Fairy.GetComponent<ShootFairy>().SetPause(false);
+            allFairy = GameObject.FindGameObjectsWithTag("Fairy");
+            if (allFairy != null)
+            {
+                foreach (GameObject Fairy in allFairy)
+                {
+                    Destroy(Fairy);
+                }
+            }
         }
+        isPause = false;
         countLife = 3;
         countScore = 0;
         speed = 1;
