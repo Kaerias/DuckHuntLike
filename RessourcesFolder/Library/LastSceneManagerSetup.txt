@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Save/Menu.unity
+- path: Assets/_Save/DuckgHunt.unity
   isLoaded: 1
   isActive: 1

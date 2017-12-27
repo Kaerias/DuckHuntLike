@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fairy
   - Blood
+  - Wall
   layers:
   - Default
   - TransparentFX

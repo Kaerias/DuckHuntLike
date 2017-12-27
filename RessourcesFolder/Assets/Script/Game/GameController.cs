@@ -179,4 +179,18 @@ public class GameController : MonoBehaviour
         shootFail = b;
     }
 
+    public bool GetIsPause()
+    {
+        return isPause;
+    }
+
+    public bool GetEnd()
+    {
+        return End;
+    }
+
+    public int GetScore()
+    {
+        return countScore;
+    }
 }

@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Game\GameController.cs" />
     <Compile Include="Assets\Script\Game\ShootFairy.cs" />
+    <Compile Include="Assets\Script\Game\SpawnBlock.cs" />
     <Compile Include="Assets\Script\Game\ViewFinderController.cs" />
     <Compile Include="Assets\Script\Menu\Menu.cs" />
   </ItemGroup>
