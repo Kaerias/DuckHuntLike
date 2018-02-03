@@ -73,7 +73,7 @@ public class GameController : MonoBehaviour
         if (Fairy.GetComponent<ShootFairy>().GetIsShooted())
         {
             BloodDelete = Instantiate(BloodParticle, Fairy.transform.position, transform.rotation) as GameObject;
-            BloodDelete.transform.position = Fairy.transform.position;
+            BloodDelete.transform.position = new Vector3(Fairy.transform.position.x, Fairy.transform.position.y, -0.7f);
             m_MyAudioSource.PlayOneShot(Music[0], 0.7f);
             InvokeFairyOnBoard();
             i++;

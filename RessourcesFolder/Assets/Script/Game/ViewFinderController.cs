@@ -13,8 +13,4 @@ public class ViewFinderController : MonoBehaviour {
     void Start () {
         Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
     }
-	
-	// Update is called once per frame
-	void Update () {
-    }
 }

@@ -42,18 +42,25 @@ public class SpawnBlock : MonoBehaviour {
             wallTimer -= Time.deltaTime;
             if (wallTimer <= 0)
             {
-                int i = 0;
                 DestroyWall();
-                while (i < nbrSpawnBlock)
-                {
-                    wallInvoked = Instantiate(wall, transform.position, transform.rotation) as GameObject;
-                    wallInvoked.transform.position = new Vector3(Random.Range(-8f, 8f), Random.Range(-3.5f, 3.5f), -2);
-                    i++;
-                }
+				NbrSpawnBlockInMap();
                 wallTimer = reInvokeWallTimer;
             }
         }
     }
+
+	//laisser à faire au lycéen
+	void NbrSpawnBlockInMap()
+	{
+		int i = 0;
+
+		while (i < nbrSpawnBlock)
+		{
+			wallInvoked = Instantiate(wall, transform.position, transform.rotation) as GameObject;
+			wallInvoked.transform.position = new Vector3(Random.Range(-8f, 8f), Random.Range(-3.5f, 3.5f), -2);
+			i = i + 1;
+		}
+	}
 
     void CalculNbrSpawnBlock()
     {
